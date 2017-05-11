@@ -3,8 +3,8 @@ A sample app to show working of react with webpack
 
 ## commands to run the app
 
-npm install - install dependencies
-npm start - start webpack-dev-server
-npm build - build webpack
+`npm install` - install dependencies </br>
+`npm start` - start webpack-dev-server </br>
+`npm run build` - build webpack </br>
 
 
