@@ -1,7 +1,7 @@
 
 var config = {
 	entry:[
-		'./main.js'
+		'./src/main.js'
 		],
 	output: {
 		path: __dirname + '/dist/',
