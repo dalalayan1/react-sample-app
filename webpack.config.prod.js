@@ -1,15 +1,20 @@
-var path = require('path');
 
-console.log('running webpack-dev');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+  template : __dirname + '/src/index_build.html',
+  filename : 'index.html',
+  inject : 'body'
+});
+
+console.log('running webpack-prod');
 
 var config = {
 	entry:[
 		'./src/main.js'
 		],
 	output: {
-		path: __dirname + '/dist/',
-		filename: 'bundle.js',
-        publicPath: '/'
+		path: __dirname + '/dist',
+		filename: 'js/bundle.js'
 	},
 	devServer: {
 		inline: true,
@@ -34,6 +39,9 @@ var config = {
 		}
 		
 		]
-	}
+	},
+	plugins: [
+		HtmlWebpackPluginConfig
+	]
 }
 module.exports = config;
