@@ -33,6 +33,8 @@
     "open": "*",
     "webpack": "*",
     "webpack-dev-server": "*",
-    "webpack-hot-middleware": "*"
+    "webpack-hot-middleware": "*",
+    "stylelint-webpack-plugin": "*",
+    "webpack-eslint-plugin": "*"
   }
 }
