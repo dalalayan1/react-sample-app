@@ -27,6 +27,7 @@
     "css-loader": "*",
     "style-loader": "*",
     "sass-loader": "*",
+    "less-loader": "*",
     "express": "*",
     "html-webpack-plugin": "*",
     "jsx-loader": "*",
@@ -34,7 +35,8 @@
     "webpack": "*",
     "webpack-dev-server": "*",
     "webpack-hot-middleware": "*",
-    "stylelint-webpack-plugin": "*",
+    "stylelint-bare-webpack-plugin": "*",
+    "stylelint": "*",
     "webpack-eslint-plugin": "*"
   }
 }

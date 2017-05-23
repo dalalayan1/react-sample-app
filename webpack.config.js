@@ -1,7 +1,5 @@
 var path = require('path');
-
-var StyleLintPlugin = require("stylelint-webpack-plugin");
-
+var StylelintBarePlugin = require('stylelint-bare-webpack-plugin');
 console.log('running webpack-dev');
 
 var config = {
@@ -19,14 +17,6 @@ var config = {
 		port:3001
 	},
 	module: {
-		rules: [
-	      {
-	        enforce: "pre",
-	        test: /\.js$/,
-	        exclude: /node_modules/,
-	        loader: "eslint-loader"
-	      }
-        ],
 		loaders: [
 		{
 			test:/\.js$/,
@@ -45,7 +35,7 @@ var config = {
 		]
 	},
 	plugins: [
-	new StyleLintPlugin({
+	new StylelintBarePlugin({
 		configFile: './.stylelintrc',
 		failOnError: false
 	})
