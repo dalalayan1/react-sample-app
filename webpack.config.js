@@ -1,5 +1,5 @@
 var path = require('path');
-var StylelintBarePlugin = require('stylelint-bare-webpack-plugin');
+var StylelintWebpackPlugin = require('stylelint-webpack-plugin');
 console.log('running webpack-dev');
 
 var config = {
@@ -28,14 +28,15 @@ var config = {
 			include: path.join(__dirname, 'src')
 		},
 		{
-			test: /\.scss$/,
-			loader: 'style-loader!css-loader!sass-loader',
+			test: /\.less$/,
+			loader: 'style-loader!css-loader!less-loader',
 			include: path.join(__dirname, 'src')
 		}
 		]
 	},
 	plugins: [
-	new StylelintBarePlugin({
+	new StylelintWebpackPlugin({
+		files: ['**/*.scss','**/*.less'],
 		configFile: './.stylelintrc',
 		failOnError: false
 	})

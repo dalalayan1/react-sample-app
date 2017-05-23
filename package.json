@@ -35,8 +35,7 @@
     "webpack": "*",
     "webpack-dev-server": "*",
     "webpack-hot-middleware": "*",
-    "stylelint-bare-webpack-plugin": "*",
-    "stylelint": "*",
+    "stylelint-webpack-plugin": "*",
     "webpack-eslint-plugin": "*"
   }
 }
